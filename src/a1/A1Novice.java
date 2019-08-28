@@ -9,34 +9,32 @@ public class A1Novice {
 		Scanner scan = new Scanner(System.in);
 
 		// Your code follows here.
-		int count = scan.nextInt();
-
-		int[] ar = new int[count];
-	
-		for (int i=0; i<ar.length; i++) {
-			ar[i] = scan.nextInt();	
-			System.out.println(ar[i]);
+		
+		int totalP = (scan.nextInt());
+		
+		for (int i = 0; i < totalP; i++) {
+		String first = (scan.next());
+		
+		char ini = first.charAt(0);
+		System.out.print(ini + ". " + (scan.next()) + " ");
+		int things = (scan.nextInt());
+		
+		int j = 0;
+		
+		while (j < things) {
+			int quantity = (scan.nextInt());
+			String item = (scan.next());
+			double price = (scan.nextDouble());
+			double total = (quantity * price);
+		
+			j++;
+			System.out.print(total + " ");
+		}
+		
 		}
 		scan.close();
 		
-		System.out.print(scan.next());
-		//int first = findFirstLetter(ar);
-		//int last = findLastName(ar);
-		//int total = calculateTotal(ar);
 		
-		// Print results
-		
-		//System.out.println(first + ". " + last + ": " + total);
-
-		//static int findFirstLetter(int[] ar) {
-			
-			int sum = 0;
-			
-			for (int i=0; i<ar.length; i++) {
-				sum += ar[i];
-			}
-			
-		//	return sum;
 		}
 		
 	}
