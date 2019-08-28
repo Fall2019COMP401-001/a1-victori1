@@ -19,7 +19,7 @@ public class A1Novice {
 		}
 		scan.close();
 		
-		System.out.println(scan.next());
+		System.out.print(scan.next());
 		//int first = findFirstLetter(ar);
 		//int last = findLastName(ar);
 		//int total = calculateTotal(ar);
