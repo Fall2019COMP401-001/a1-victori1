@@ -37,13 +37,14 @@ public class A1Novice {
 			//System.out.println("price: " + price);
 			double itemTotal = (quantity * price);
 			//System.out.println("item total: " + itemTotal);
-
-			total1 += itemTotal;
 			
+			total1 += itemTotal;
+
 			//j++;
 			
 		}
-		System.out.println(total1 + " ");
+		String totalstr = String.format("%.2f", total1);
+		System.out.println(totalstr + " ");
 		}
 		scan.close();
 		
