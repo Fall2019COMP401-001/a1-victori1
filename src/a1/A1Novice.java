@@ -12,25 +12,38 @@ public class A1Novice {
 		
 		int totalP = (scan.nextInt());
 		
-		for (int i = 0; i < totalP; i++) {
+		for (int i = 0; i <= totalP; i++) {
 		String first = (scan.next());
 		
 		char ini = first.charAt(0);
-		System.out.print(ini + ". " + (scan.next()) + " ");
+		String last = (scan.next());
+		System.out.print(ini + ". " + last + ": ");
 		int things = (scan.nextInt());
+		//System.out.print("things: " + things);
+		//int j = 0;
+		double total1 = 0;
+	//	System.out.println(things);
+		int quantity = 0;
 		
-		int j = 0;
+		for (int j = 0; j < things; j++) {
+		//	System.out.println("runing 1");
+			quantity = (scan.nextInt());
 		
-		while (j < things) {
-			int quantity = (scan.nextInt());
+//			System.out.println("hey");
+			//System.out.println("quantity: " + quantity);
 			String item = (scan.next());
+			//System.out.println("item: " + item);
 			double price = (scan.nextDouble());
-			double total = (quantity * price);
-		
-			j++;
-			System.out.print(total + " ");
+			//System.out.println("price: " + price);
+			double itemTotal = (quantity * price);
+			//System.out.println("item total: " + itemTotal);
+
+			total1 += itemTotal;
+			
+			//j++;
+			
 		}
-		
+		System.out.println(total1 + " ");
 		}
 		scan.close();
 		
